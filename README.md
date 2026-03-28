@@ -23,6 +23,22 @@ Built to demonstrate hands-on networking, DNS architecture, VPN configuration, a
 
 ---
 
+## Screenshots
+
+### Grafana — Live System Monitoring
+![Grafana Dashboard](grafana-dashboard_png.png)
+*Real-time CPU, RAM, and disk usage tracked via Telegraf → InfluxDB → Grafana*
+
+### Pi-hole — DNS Filtering Dashboard
+![Pi-hole Dashboard](pihole-dashboard_png.png)
+*420k+ queries processed, 87,418 domains on blocklist. Upstream server shows `localhost#5335` (Unbound) confirming no third-party DNS forwarding*
+
+### Tailscale — VPN Connected Devices
+![Tailscale Machines](tailscale-devices_png.png)
+*Pi and mobile devices connected via Tailscale overlay network — routes DNS through Pi-hole on cellular*
+
+---
+
 ## Hardware
 
 - **Device:** Raspberry Pi 4B — 2GB RAM
